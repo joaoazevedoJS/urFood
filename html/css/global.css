@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
+  padding   : 0;
+  margin    : 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background: #E9F0EE;
-  
+  background : #E9F0EE;
+
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   line-height: 135%;
@@ -24,21 +26,38 @@ li {
 }
 
 a {
-  color: #eeeeee;
+  color          : #eeeeee;
   text-decoration: none;
-  transition: all 0.4s;
+  transition     : all 0.4s;
+}
+
+.btn {
+  margin-bottom: 32px;
+  cursor       : pointer;
+  user-select  : none;
+  outline      : none;
+  font-size    : 20px;
+  font-family  : 'Lato', sans-serif;
+  font-weight  : 700;
+  height       : 50px;
+  width        : 340px;
+  border       : none;
+  border-radius: 8px;
+  background   : #80B2FD;
+  color: #E9F0EE;
+  transition   : color 0.4s, background 0.4s;
 }
 
 .close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  font-size: 40px;
-  color: #f7f7f7;
-  cursor: pointer;
-  outline: none;
+  position   : absolute;
+  top        : 16px;
+  right      : 16px;
+  font-size  : 40px;
+  color      : #f7f7f7;
+  cursor     : pointer;
+  outline    : none;
   user-select: none;
-  transition: color 0.5s;
+  transition : color 0.5s;
 }
 
 .close:hover,
@@ -47,13 +66,13 @@ a {
 }
 
 .mobile-background {
-  display: none;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.2;
-  outline: none;
+  display    : none;
+  position   : absolute;
+  top        : 0;
+  height     : 100%;
+  width      : 100%;
+  opacity    : 0.2;
+  outline    : none;
   user-select: none;
 }
 

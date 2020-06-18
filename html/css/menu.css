@@ -9,6 +9,7 @@ nav.menu {
   width: 100%;
   height: 100%;
   background: rgba(103, 100, 126, 0.3);
+  transition: background 1s;
 }
 
 nav.menu section.container {
@@ -19,6 +20,8 @@ nav.menu section.container {
   flex-direction: column;
   align-items: center;
   overflow: auto;
+  position: absolute;
+  animation: show 1s;
 }
 
 nav.menu section.container header {
@@ -81,4 +84,14 @@ nav.menu section.container footer a:active {
   nav.menu section.container header img.logo {
     width: 200px;
   }
+}
+
+@keyframes show {
+  from { right: -100px; }
+  to { right: 0px; }
+}
+
+@keyframes close {
+  from { right: 0px; }
+  to { right: -100px; }
 }
