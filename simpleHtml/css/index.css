@@ -1,0 +1,85 @@
+main.introduction {
+  display   : flex;
+  align-items: center;
+  justify-content: space-between;
+  width     : 100%;
+  margin-top: 70px;
+}
+
+main.introduction img {
+  width: 35%;
+}
+
+main.introduction section {
+  width      : 440px;
+  margin-left: 82px;
+  z-index    : 90;
+}
+
+main.introduction section h1 {
+  color    : #63A1FF;
+  font-size: 32px;
+}
+
+main.introduction section p {
+  font-size  : 20px;
+  line-height: 135%;
+  margin     : 24px 0;
+  color      : #67647E;
+}
+
+main.introduction section .btn {
+  background: transparent;
+  color     : #80B2FD;
+  border    : 0.5px solid #67647E;
+}
+
+main.introduction section .btn:hover,
+main.introduction section .btn:active {
+  background: #80B2FD;
+  color     : #E9F0EE;
+  border    : none;
+}
+
+@media (max-width: 960px) {
+  main.introduction {
+    overflow: hidden;
+  }
+
+  main.introduction section {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 100%;
+    margin        : 0 50px;
+    text-align    : center;
+  }
+
+  main.introduction section p {
+    width: 80%;
+  }
+
+  main.introduction section .btn {
+    height   : 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 545px) {
+  main.introduction section {
+    margin: 0 25px;
+  }
+
+  main.introduction section h1 {
+    font-size: 24px;
+  }
+
+  main.introduction section p {
+    font-size: 16px;
+    width    : 90%;
+  }
+
+  main.introduction section a {
+    width: 75%;
+  }
+}
