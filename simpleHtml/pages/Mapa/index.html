@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/header.css">
   <link rel="stylesheet" href="../../css/menu.css">
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <title>Mapa do Site</title>
 </head>
 
 <body>
@@ -21,6 +20,8 @@
   </header>
 
   <nav class="menu hide">
+    <div class="backgroundClose"></div>
+
     <section class="container">
       <header>
         <a href="../../index.html">
@@ -36,7 +37,7 @@
           </li>
 
           <li>
-            <a href="#">Refeições</a>
+            <a href="../Refeicoes/index.html">Refeições</a>
           </li>
 
           <li>
@@ -44,11 +45,11 @@
           </li>
 
           <li>
-            <a href="#" class="js-menu">Contato</a>
+            <a href="../Contato/index.html">Contato</a>
           </li>
 
           <li>
-            <a href="#">Mapa do site</a>
+            <a href="#" class="js-menu">Mapa do site</a>
           </li>
         </ul>
       </main>
@@ -57,28 +58,19 @@
     </section>
   </nav>
 
-  <main class="form">
-    <form action="/" method="POST">
-      <section class="inputs">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email">
+  <main class="page-not-found">
+    <img src="../../images/notFound.svg" alt="Page not Found" class="desktop-background">
 
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name">
-
-        <label for="subject">Assunto</label>
-        <input type="text" name="subject" id="subject">
-      </section>
-
-      <section class="textarea">
-        <label for="message">Mensagem</label>
-        <textarea name="message" id="message"></textarea>
-
-        <button type="submit" class="btn">Enviar</button>
-      </section>
-
-    </form>
+    <section class="pages">
+      <h1>O que você procura?</h1>
+      <a href="../../index.html">Home</a>
+      <a href="../Refeicoes/index.html">Refeições</a>
+      <a href="../sobre/index.html">Sobre Nós</a>
+      <a href="../Contato/index.html">Contato</a>
+    </section>
   </main>
+
+  <img src="../../images/notFound.svg" alt="Page not Found" class="mobile-background">
 
   <script src="../../js/script.js"></script>
 </body>

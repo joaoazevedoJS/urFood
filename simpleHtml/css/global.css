@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background : #E9F0EE;
-
+  color: #67647E;
 }
 
 h1,
@@ -20,6 +20,7 @@ h4 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   line-height: 135%;
+  color: #63A1FF;
 }
 
 li {
@@ -99,9 +100,6 @@ nav.menu.hide {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #80fd8a;
-  font-size: 135%;
-  letter-spacing: 2px;
 
   position: fixed;
   top: 0;
@@ -109,6 +107,12 @@ nav.menu.hide {
   height: 100%;
   z-index: 9999;
   background: rgba(0, 0, 0, 0.8);
+}
+
+.sucessForm h4 {
+  color: #80fd8a;
+  font-size: 135%;
+  letter-spacing: 2px;
 }
 
 .sucessForm .animeted {

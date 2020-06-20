@@ -1,7 +1,7 @@
 main.introduction {
   display   : flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width     : 100%;
   margin-top: 70px;
 }
@@ -12,12 +12,10 @@ main.introduction img {
 
 main.introduction section {
   width      : 440px;
-  margin-left: 82px;
   z-index    : 90;
 }
 
 main.introduction section h1 {
-  color    : #63A1FF;
   font-size: 32px;
 }
 
@@ -25,7 +23,6 @@ main.introduction section p {
   font-size  : 20px;
   line-height: 135%;
   margin     : 24px 0;
-  color      : #67647E;
 }
 
 main.introduction section .btn {

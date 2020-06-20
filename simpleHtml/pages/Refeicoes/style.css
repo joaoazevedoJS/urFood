@@ -55,13 +55,11 @@ main.meals div.meal img:hover {
 
 main.meals div.meal div.description h3 {
   font-size: 24px;
-  color: #63A1FF;
   margin-bottom: 24px;
 }
 
 main.meals div.meal div.description p {
   line-height: 135%;
-  color: #67647E;
 }
 
 @media (max-width: 960px) {

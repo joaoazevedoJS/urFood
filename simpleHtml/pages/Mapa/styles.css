@@ -1,0 +1,33 @@
+main.page-not-found {
+  display        : flex;
+  justify-content: space-around;
+  align-items    : center;
+}
+
+main.page-not-found section.pages {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+}
+
+main.page-not-found section.pages h1 {
+  margin-bottom: 24px;
+}
+
+main.page-not-found section.pages a {
+  color        : #67647E;
+  font-size    : 24px;
+  margin-bottom: 16px;
+  transition   : color 0.4s;
+}
+
+main.page-not-found section.pages a:hover,
+main.page-not-found section.pages a:active {
+  color: #89879e;
+}
+
+@media (max-width: 960px) {
+  main.page-not-found {
+    margin-top: 80px;
+  }
+}
