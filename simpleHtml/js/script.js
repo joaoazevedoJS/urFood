@@ -1,3 +1,35 @@
+/* Remove form event and sucess message*/
+
+for(form of document.querySelectorAll('form')) {
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    
+    const img = document.createElement('img')
+    img.src = './sucess.svg'
+    img.alt = 'Sucess message'
+
+    const h4 = document.createElement("h4")
+    h4.innerHTML = "Enviado com sucesso!"
+
+    const section = document.createElement('section')
+    section.classList.add("sucessForm")
+
+    const div = document.createElement('div')
+    div.classList.add('animeted')
+
+    div.appendChild(img)
+    div.appendChild(h4)
+
+    section.appendChild(div)
+
+    document.body.appendChild(section)
+
+    setTimeout(() => {
+      document.location.href = "../../index.html"
+    }, 1500)
+  })
+}
+
 document.querySelector("div.backgroundClose")
   .addEventListener("click", () => {
     document.querySelector('nav.menu')

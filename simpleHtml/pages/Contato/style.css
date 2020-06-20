@@ -1,9 +1,11 @@
 main.form {
   padding: 0 82px;
+  width: 100%;
   margin-top: 100px;
 }
 
 main.form form {
+  width: 100%;
   display: grid;
   grid-template-columns: 350px 1fr;
   grid-gap: 176px;
@@ -30,13 +32,14 @@ main.form form label {
 }
 
 main.form form section.inputs input {
+  width: 100%;
   height: 40px;
   margin-bottom: 24px;
   padding: 0 8px;
-
 }
 
 main.form form section.textarea {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -65,8 +68,18 @@ main.form form section.textarea button.btn:active {
 }
 
 @media (max-width: 970px) {
+  main.form {
+    padding: 0 25px;
+  }
+
   main.form form {
     grid-gap: 0px;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  main.form form section.textarea button {
+    width: 100%;
   }
 }
