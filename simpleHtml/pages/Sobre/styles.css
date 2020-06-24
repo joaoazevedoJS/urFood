@@ -1,0 +1,73 @@
+img.mobile-background {
+  z-index: 0;
+  right: 0;
+}
+
+main section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+  padding: 0px 82px;
+  margin-bottom: 120px;
+}
+
+main section:last-child {
+  margin-bottom: 0px;
+}
+
+main section div.info {
+  width: 50%;
+  z-index: 101;
+}
+
+main section div.info h1 {
+  font-size: 32px;
+}
+
+main section div.info p {
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+main section div.info p + p {
+  margin-top: 16px;
+}
+
+main section img.desktop-background {
+  width: 35%;
+}
+
+main section.team {
+  height: 100vh;
+  background: #F7F7F7;
+}
+
+main section.wins {
+  height: 60vh;
+}
+
+@media (max-width: 960px) {
+  main section {
+    margin-bottom: 100px;
+    padding: 0px 30px;
+  }
+
+  main section:first-child {
+    margin-top: 150px;
+  }
+
+  main section:last-child {
+    margin-bottom: 32px;
+  }
+
+  main section div.info {
+    width: 100%;
+  }
+
+  main section div.info h1 {
+    font-size: 24px;
+  }
+}
