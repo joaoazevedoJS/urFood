@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width     : 100%;
+  margin-bottom: 45px;
+}
+
+main div.content {
+  width      : 440px;
+  z-index    : 90;
+}
+
+main div.content h1 {
+  font-size: 32px;
+}
+
+main div.content p {
+  font-size  : 20px;
+  line-height: 135%;
+  margin     : 24px 0;
+}

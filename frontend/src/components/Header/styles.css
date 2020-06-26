@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 45px 82px;
+}
+
+header img {
+  cursor: pointer;
+  width: 180px;
+  transition: filter 0.4s;
+}
+
+header img:hover,
+header img:active {
+  filter: brightness(70%);
+}
+
+header .icon {
+  font-size: 35px;
+  color: #5F5D7E;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+header .icon:hover,
+header .icon:active {
+  color: #2F2E41;
+}
