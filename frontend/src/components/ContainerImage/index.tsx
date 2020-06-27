@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import './styles.css'
 
@@ -6,29 +7,41 @@ interface Props {
   image: {
     src: string,
     alt: string,
-    isImageleft?: boolean
+    isImageleft?: boolean,
   },
   title: string,
   text: string,
-  buttonText?: string
+  button?: {
+    text: string,
+    navigationTo: string
+  }
 }
 
-const ContainerImage: FC<Props> = ({ image, title, text, buttonText }) => {
+const ContainerImage: FC<Props> = ({ image, title, text, button }) => {
+  const history = useHistory()
+  
+  function handleNavigationTo() {
+    if(button) {
+      history.push(button.navigationTo)
+    }
+  }
+
   return (
     <main>
-      { // Image Left
-        image.isImageleft && <img src={image.src} alt={image.alt} className="desktop-background" />
-      }
+      <img 
+        src={image.src} 
+        alt={image.alt} 
+        className={`desktop-background ${ !image.isImageleft ? 'img-right' : '' }`}
+      />
 
       <div className="content">
         <h1>{title}</h1>
         <p>{text}</p>
-        {buttonText && <button className="btn btn-ghost">{buttonText}</button>}
+        {
+          button && 
+            <button className="btn btn-ghost" onClick={handleNavigationTo}>{button.text}</button>
+        }
       </div>
-
-      { // Image right
-        !image.isImageleft && <img src={image.src} alt={image.alt} className="desktop-background" />
-      }
     </main>
   )
 }

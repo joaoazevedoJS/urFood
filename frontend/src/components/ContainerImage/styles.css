@@ -20,3 +20,7 @@ main div.content p {
   line-height: 135%;
   margin     : 24px 0;
 }
+
+main img.img-right {
+  order: 1;
+}

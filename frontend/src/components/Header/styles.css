@@ -11,8 +11,8 @@ header img {
   transition: filter 0.4s;
 }
 
-header img:hover,
-header img:active {
+header img.dark-logo:hover,
+header img.dark-logo:active {
   filter: brightness(70%);
 }
 
