@@ -19,7 +19,7 @@ const MenuNavigation: FC<Props> = ({ hidden, setHidden }) => {
   }
 
   return (
-    <nav className={hidden ? "hidden" : "container"}>
+    <nav className={hidden ? "hidden" : "container"} >
       <div className="backgroundClose" onClick={() => setHidden(true)} />
 
       <section>

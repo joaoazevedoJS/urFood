@@ -1,26 +1,42 @@
-main {
+section {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width     : 100%;
-  margin-bottom: 45px;
+  height: 100vh;
 }
 
-main div.content {
+section.first {
+  height: calc(100vh - 175px);
+}
+
+section div.content {
   width      : 440px;
   z-index    : 90;
 }
 
-main div.content h1 {
-  font-size: 32px;
+section div.content h1 {
+  font-size: 24px;
 }
 
-main div.content p {
-  font-size  : 20px;
-  line-height: 135%;
-  margin     : 24px 0;
+section div.content p {
+  font-size  : 16px;
+  line-height: 145%;
+  margin-top: 24px;
 }
 
-main img.img-right {
+section div.content p + p {
+  margin-top: 16px
+}
+
+section div.content button {
+  margin-top: 24px;
+}
+
+section img.img-right  {
   order: 1;
+}
+
+section img.desktop-background {
+  width: 30%;
 }

@@ -9,15 +9,19 @@ interface Props {
     alt: string,
     isImageleft?: boolean,
   },
+  background?: {
+    firstFullScreen?: boolean,
+    color?: string
+  },
   title: string,
-  text: string,
+  texts: Array<string>,
   button?: {
     text: string,
     navigationTo: string
   }
 }
 
-const ContainerImage: FC<Props> = ({ image, title, text, button }) => {
+const ContainerImage: FC<Props> = ({ image, title, texts, button, background }) => {
   const history = useHistory()
   
   function handleNavigationTo() {
@@ -27,7 +31,10 @@ const ContainerImage: FC<Props> = ({ image, title, text, button }) => {
   }
 
   return (
-    <main>
+    <section 
+      style={{ background: background?.color }} 
+      className={ background?.firstFullScreen ? "first" : '' }
+    >
       <img 
         src={image.src} 
         alt={image.alt} 
@@ -36,13 +43,17 @@ const ContainerImage: FC<Props> = ({ image, title, text, button }) => {
 
       <div className="content">
         <h1>{title}</h1>
-        <p>{text}</p>
+        {
+          texts.map((text, index) => (
+            <p key={index}>{text}</p>
+          ))
+        }
         {
           button && 
             <button className="btn btn-ghost" onClick={handleNavigationTo}>{button.text}</button>
         }
       </div>
-    </main>
+    </section>
   )
 }
 

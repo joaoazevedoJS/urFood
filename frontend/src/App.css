@@ -13,13 +13,6 @@ body {
   color      : #67647E;
 }
 
-.new-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-}
-
 h1,
 h2,
 h3,
@@ -43,11 +36,11 @@ a {
   cursor       : pointer;
   user-select  : none;
   outline      : none;
-  font-size    : 20px;
+  font-size    : 18px;
   font-family  : 'Lato', sans-serif;
   font-weight  : 700;
-  height       : 50px;
-  width        : 340px;
+  height       : 40px;
+  width        : 300px;
   border       : none;
   border-radius: 8px;
   background   : #80B2FD;
