@@ -34,7 +34,7 @@ const MenuNavigation: FC<Props> = ({ hidden, setHidden }) => {
         <main className="links">
           <Link to="/" className={handleSelectedLink("/")}>Home</Link>
           <Link to="/menu" className={handleSelectedLink("/menu")}>Refeições</Link>
-          <Link to="/about-us" className={handleSelectedLink("/about-us")}>Sobre Nós</Link>
+          <Link to="/about-us" className={handleSelectedLink("/about-us")}>Sobre nós</Link>
           <Link to="/contact-us" className={handleSelectedLink("/contact-us")}>Entre em contato</Link>
         </main>
 

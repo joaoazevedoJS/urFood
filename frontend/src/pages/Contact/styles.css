@@ -1,0 +1,132 @@
+main.form {
+  padding: 0 82px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+main.form form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-gap: 176px;
+}
+
+main.form form section.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+main.form form textarea {
+  border: none;
+  background: #F7F7F7;
+  border-radius: 8px;
+  outline: none;
+}
+
+main.form form section.textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main.form form label {
+  font-size: 16px;
+  color: #A8A8A8;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+main.form form section.textarea textarea {
+  border: none;
+  background: #F7F7F7;
+  border-radius: 8px;
+  outline: none;
+}
+
+main.form form section.textarea textarea {
+  margin-bottom: 24px;
+  resize: vertical;
+  min-height: 150px;
+  max-height: 230px;
+  padding: 8px;
+}
+
+main.form form section.textarea button {
+  align-self: flex-end;
+}
+
+main.form form section.textarea button.btn:hover,
+main.form form section.textarea button.btn:active {
+  background: #5687cf;
+}
+
+.sucessForm {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+
+  position  : fixed;
+  top       : 0;
+  width     : 100%;
+  height    : 100%;
+  z-index   : 9999;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.sucessForm svg.icon {
+  font-size: 50px;
+  color         : #80fd8a;
+}
+
+.sucessForm h4 {
+  color         : #80fd8a;
+  font-size     : 135%;
+  letter-spacing: 1.3px;
+}
+
+.sucessForm .animeted {
+  animation : sucess 1s infinite;
+  text-align: center;
+}
+
+div.hidden {
+  display: none;
+}
+
+@media (max-width: 1070px) {
+  main.form form {
+    grid-gap: 100px;
+  }
+}
+
+@media (max-width: 970px) {
+  main.form {
+    padding: 0 25px;
+  }
+
+  main.form form {
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  main.form form section.textarea button {
+    width: 100%;
+  }
+}
+
+@keyframes sucess {
+  0% {
+    transform: scale(0.90);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.90);
+  }
+}

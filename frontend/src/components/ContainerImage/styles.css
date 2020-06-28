@@ -1,8 +1,13 @@
-section {
-  display: flex;
-  align-items: center;
+section.container-image,
+section.first {
+  display        : flex;
+  align-items    : center;
   justify-content: space-around;
-  width     : 100%;
+  width          : 100%;
+  position: relative;
+}
+
+section.container-image {
   height: 100vh;
 }
 
@@ -11,8 +16,8 @@ section.first {
 }
 
 section div.content {
-  width      : 440px;
-  z-index    : 90;
+  width  : 440px;
+  z-index: 90;
 }
 
 section div.content h1 {
@@ -22,10 +27,10 @@ section div.content h1 {
 section div.content p {
   font-size  : 16px;
   line-height: 145%;
-  margin-top: 24px;
+  margin-top : 24px;
 }
 
-section div.content p + p {
+section div.content p+p {
   margin-top: 16px
 }
 
@@ -33,10 +38,25 @@ section div.content button {
   margin-top: 24px;
 }
 
-section img.img-right  {
+section img.img-right {
   order: 1;
 }
 
 section img.desktop-background {
   width: 30%;
+}
+
+@media (max-width: 960px) {
+  section.container-image {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding       : 0 50px;
+  }
+}
+
+@media (max-width: 545px) {
+  section div.content button {
+    width: 100%;
+  }
 }

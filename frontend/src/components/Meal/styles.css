@@ -1,0 +1,67 @@
+div.meal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+div.meal:last-child {
+  margin-bottom: 0px;
+}
+
+div.meal img {
+  margin-right: 40px;
+  width: 200px;
+  border-radius: 8px;
+  background: #808080;
+  opacity: 0.6;
+  cursor: grab;
+  transition: transform 1s, opacity 1s;
+}
+
+div.meal img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+div.meal div.description h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+div.meal div.description p {
+  line-height: 135%;
+}
+
+
+@media (max-width: 960px) {
+  div.meal div.description p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  div.meal {
+    flex-direction: column;
+  }
+
+  div.meal img {
+    width: 55%;
+    margin-bottom: 32px;
+    margin-right: 0px;
+  }
+
+  div.meal img:hover {
+    transform: scale(1.15);
+  }
+  
+
+  main.meals div.meal div.description h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+  
+  div.meal div.description p {
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+main.notFound-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+main.notFound-container section {
+  z-index: 90;
+}
+
+main.notFound-container section h1 {
+  margin-bottom: 30px;
+}
+
+main.notFound-container section a {
+  display: block;
+  color: #67647E;
+  margin-top: 16px;
+  font-size: 20px;
+  transition: color 0.4s;
+}
+
+main.notFound-container section a:hover,
+main.notFound-container section a:active {
+  color: #89879e;
+}
+
+@media (max-width: 960px) {
+  main.notFound-container {
+    justify-content: center;
+    height         : calc(100vh - 180px);
+  }
+}
+
+@media (max-width: 750px) {
+  main.notFound-container {
+    padding: 0 40px;
+  }
+  
+  main.meals {
+    background: #f7f7f7;
+    padding: 100px 40px;
+    overflow: hidden;
+  }
+}

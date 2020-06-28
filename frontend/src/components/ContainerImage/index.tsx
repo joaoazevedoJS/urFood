@@ -23,22 +23,28 @@ interface Props {
 
 const ContainerImage: FC<Props> = ({ image, title, texts, button, background }) => {
   const history = useHistory()
-  
+
   function handleNavigationTo() {
-    if(button) {
+    if (button) {
       history.push(button.navigationTo)
     }
   }
 
   return (
-    <section 
-      style={{ background: background?.color }} 
-      className={ background?.firstFullScreen ? "first" : '' }
+    <section
+      style={{ background: background?.color }}
+      className={background?.firstFullScreen ? "first" : 'container-image'}
     >
-      <img 
-        src={image.src} 
-        alt={image.alt} 
-        className={`desktop-background ${ !image.isImageleft ? 'img-right' : '' }`}
+      <img
+        src={image.src}
+        alt={image.alt}
+        className={`desktop-background ${!image.isImageleft ? 'img-right' : ''}`}
+      />
+
+      <img
+        src={image.src}
+        alt={image.alt}
+        className={`mobile-background`}
       />
 
       <div className="content">
@@ -49,8 +55,8 @@ const ContainerImage: FC<Props> = ({ image, title, texts, button, background }) 
           ))
         }
         {
-          button && 
-            <button className="btn btn-ghost" onClick={handleNavigationTo}>{button.text}</button>
+          button &&
+          <button className="btn btn-ghost" onClick={handleNavigationTo}>{button.text}</button>
         }
       </div>
     </section>

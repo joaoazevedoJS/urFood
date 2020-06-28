@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './styles.css'
+
 import Header from '../../components/Header'
 import ContainerImage from '../../components/ContainerImage'
 
@@ -11,7 +13,7 @@ function Menu() {
   document.title = 'urFood - Sobre Nós'
 
   return (
-    <main>
+    <main className="about-us">
       <Header />
 
       <ContainerImage
