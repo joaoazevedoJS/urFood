@@ -4,7 +4,7 @@ section.first {
   align-items    : center;
   justify-content: space-around;
   width          : 100%;
-  position: relative;
+  position       : relative;
 }
 
 section.container-image {
@@ -56,6 +56,14 @@ section img.desktop-background {
 }
 
 @media (max-width: 545px) {
+  section.container-image {
+    padding: 0 35px;
+  }
+
+  section div.content {
+    width  : 100%;
+  }
+
   section div.content button {
     width: 100%;
   }

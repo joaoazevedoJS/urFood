@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FiMenu } from 'react-icons/fi'
 
@@ -12,8 +12,11 @@ function Header() {
   const [hidden, setHidden] = useState(true)
   const [fixedHeader, setFixedHeader] = useState(false)
 
-  document.body.onscroll = handleScroll
-
+  useEffect(() => {
+    document.body.onscroll = handleScroll
+    
+    window.scrollTo({ left: 0, top: 0 })
+  }, [])
 
   function handleScroll() {
     // for Safari

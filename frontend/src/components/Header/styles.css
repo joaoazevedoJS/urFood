@@ -40,15 +40,17 @@ header.fixed {
 }
 
 @media (max-width: 960px) {
-  header {
+  header,
+  header.fixed  {
     padding: 45px 50px;
     z-index: 100;
   }
 }
 
 @media (max-width: 545px) {
-  header {
-    padding: 25px;
+  header,
+  header.fixed {
+    padding: 10px 25px;
   }
 
   header img {

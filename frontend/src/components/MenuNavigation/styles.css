@@ -20,19 +20,21 @@ nav.container section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
+  height: 100%;
   width: 375px;
   background: #63A1FF;
-  height: 100%;
   position: absolute;
   animation: show 1s;
+  overflow: auto;
 }
 
 nav.container section main.links { 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 70%;
+  height: 100%;
 }
 
 nav.container section main.links a {
@@ -90,8 +92,13 @@ nav.hidden {
 @media (max-width: 545px) {
   nav.container section {
     width: 100%;
+    justify-content: center;
   }
-  
+
+  nav.container section header {
+    margin-top: 25px;
+  }
+ 
   nav.container section header img {
     width: 200px;
   }

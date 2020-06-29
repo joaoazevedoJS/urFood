@@ -13,7 +13,7 @@ interface Props {
 
 const MenuNavigation: FC<Props> = ({ hidden, setHidden }) => {
   function handleSelectedLink(to: string) {
-    const path = document.location.pathname
+    const path = document.location.hash
 
     return path === to ? 'selected' : ''
   }
@@ -32,10 +32,10 @@ const MenuNavigation: FC<Props> = ({ hidden, setHidden }) => {
         </header>
 
         <main className="links">
-          <Link to="/" className={handleSelectedLink("/")}>Home</Link>
-          <Link to="/menu" className={handleSelectedLink("/menu")}>Refeições</Link>
-          <Link to="/about-us" className={handleSelectedLink("/about-us")}>Sobre nós</Link>
-          <Link to="/contact-us" className={handleSelectedLink("/contact-us")}>Entre em contato</Link>
+          <Link to="/" className={handleSelectedLink("#/")}>Home</Link>
+          <Link to="/menu" className={handleSelectedLink("#/menu")}>Refeições</Link>
+          <Link to="/about-us" className={handleSelectedLink("#/about-us")}>Sobre nós</Link>
+          <Link to="/contact-us" className={handleSelectedLink("#/contact-us")}>Entre em contato</Link>
         </main>
 
         <footer>

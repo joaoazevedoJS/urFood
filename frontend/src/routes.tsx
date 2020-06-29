@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Menu from './pages/Menu'
@@ -9,7 +9,7 @@ import NotFound from './pages/404'
 
 export default function Routes() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path="/menu" exact component={Menu} />
@@ -17,6 +17,6 @@ export default function Routes() {
         <Route path="/contact-us" exact component={Contact} />
         <Route path="*" component={NotFound} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
